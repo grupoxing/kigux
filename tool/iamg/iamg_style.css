@@ -1,0 +1,225 @@
+.amigo1 {
+ float: left;
+ margin-top: 8px;
+ overflow: hidden;
+ padding: 0;
+ text-align: center;
+ width: 65px;
+}
+.amigo2 {
+ float: left;
+ margin-top: 8px;
+ overflow: hidden;
+ padding: 0;
+ text-align: center;
+ width: 69px;
+}
+.amigo1 img, .amigo2 img {
+ border: 3px double #D9E9E9;
+ display: block;
+ margin: 0 auto;
+}
+.espera {
+ background-color: #F0F0F0;
+ border: 3px double #FFFFFF;
+ box-shadow: 2px 2px 2px #DFDFDF;
+ height: 68px;
+ margin: 12px 10px;
+ padding: 5px;
+ position: relative;
+}
+.espera .info-m, .espera .info-f {
+ background: none repeat scroll 0 0 #EDEFF0;
+ box-shadow: 3px 3px 3px #DFDFDF;
+ float: left;
+ margin-bottom: 15px;
+ min-height: 30px;
+ padding: 10px;
+ position: relative;
+ width: 500px;
+}
+.espera .foto {
+ background: url("/tool/imsg/imsg_seta.png") no-repeat scroll 100% 18px transparent;
+ display: block;
+ float: left;
+ margin: 0;
+ overflow: hidden;
+ text-align: center;
+ width: 100px;
+}
+.espera .foto img {
+ background: url("images/iamg_thumb_foto.gif") repeat scroll 0 0 transparent;
+ border: 2px solid transparent;
+ box-shadow: 3px 3px 3px #DFDFDF;
+ display: table;
+ height: 52px;
+ margin: 0 auto 4px;
+ width: 52px;
+}
+.espera .foto img:hover {
+ border: 2px solid #F9A200;
+}
+.espera .info-f {
+ background: url("images/iamg_gene_t.gif") no-repeat scroll 7px 7px transparent;
+}
+.espera form {
+ bottom: 5px;
+ float: right;
+ margin-top: 15px;
+ position: absolute;
+ right: 5px;
+ text-align: right;
+}
+#iamg_lista {
+ display: block;
+ margin-right: -10px;
+ overflow: hidden;
+ width: 545px;
+}
+.iamg_user {
+ clear: both;
+ margin: 10px 0;
+ display: table;
+}
+.iamg_user .auto {
+ float: left;
+ overflow: hidden;
+ width: 60px;
+ background-color: #EDEFF0;
+ background-image: url("images/iamg_point_sub.png");
+ background-repeat: no-repeat;
+ background-position: right center;
+ padding: 10px;
+}
+.iamg_user .foto {
+ display: block;
+ float: left;
+}
+.iamg_user .foto img {
+ border: 1px solid #EEEEEE;
+ box-shadow: 1px 1px 3px #DDDDDD;
+ display: block;
+ margin: 0 auto 2px;
+ width: 44px;
+ height: 46px;
+}
+.iamg_user .foto img:hover {
+ border: 1px solid #F9A200;
+}
+.iamg_user .body {
+ background: none repeat scroll 0 0 #EDEFF0;
+ float: left;
+ padding: 9px 10px 8px 0px;
+ position: relative;
+ width: 535px;
+}
+.iamg_user .perg {
+ background: none repeat scroll 0 0 #FFFFFF;
+ color: #000000;
+ font-family: serif;
+ font-size: 13px;
+ max-height: 800px;
+ min-height: 40px;
+ overflow: auto;
+ padding: 5px;
+ width: 525px;
+}
+.iamg_user .title {
+ color: #909090;
+ margin-bottom: 3px;
+}
+.iamg_user .title .left {
+ float: left;
+ padding-left: 22px;
+}
+.iamg_user .title .right {
+ font-size: 11px;
+ float: left;
+ margin-left: 5px;
+}
+.iamg_user .option {
+ position: absolute;
+ right: 20px;
+ top: -20px;
+ width: -moz-max-content;
+}
+.iamg_user .option_left {
+ float: left;
+}
+.iamg_user .option_right {
+ float: right;
+}
+.gene-m, .gene-f, .gene-t {
+ background: url("images/iamg_gene_m.gif") no-repeat scroll 2px 50% transparent;
+}
+.gene-f {
+ background: url("images/iamg_gene_f.gif") no-repeat scroll 0px 50% transparent;
+}
+.gene-t {
+ background: url("images/iamg_gene_t.gif") no-repeat scroll 2px 50% transparent;
+}
+.acion, .acion-am {
+ display: block;
+ overflow: hidden;
+ padding: 0;
+ text-align: left;
+ width: 198px;
+}
+.acion-am {
+ float: right;
+ margin: 5px 0 10px;
+ position: absolute;
+ right: 0;
+ text-align: right;
+ top: 39px;
+}
+.iam, .xam, .fam, .isg, .xsg, .fsg {
+ background-position: 2px 2px;
+ background-repeat: no-repeat;
+ border: 1px solid #E4EDF2;
+ box-shadow: 0 0 2px #E4EDF2;
+ color: #B0B0BF;
+ display: block;
+ font-size: 8pt;
+ height: 16px;
+ margin: 0 2px 5px;
+ padding: 2px 4px 1px 21px;
+ text-align: left;
+ width: 68px;
+}
+.iam:hover, .xam:hover, .fam:hover, .isg:hover, .xsg:hover, .fsg:hover {
+ border: 1px solid #D5D5D5;
+ box-shadow: 0 0 3px #D5D5D5;
+ color: #B0B0BF;
+ text-decoration: none;
+}
+.iam {
+ background-color: #F2FFF0;
+ background-image: url("images/iamg_addamg_n.gif");
+ float: left;
+}
+.xam {
+ background-color: #FFF0F0;
+ background-image: url("images/iamg_addamg_x.gif");
+ float: left;
+}
+.fam {
+ background-color: #FFFFF0;
+ background-image: url("images/iamg_addamg_f.gif");
+ float: left;
+}
+.isg {
+ background-color: #F2FFF0;
+ background-image: url("images/iamg_seguir_n.png");
+ float: left;
+}
+.xsg {
+ background-color: #FFF0F0;
+ background-image: url("images/iamg_seguir_x.png");
+ float: left;
+}
+.fsg {
+ background-color: #FFFFF0;
+ background-image: url("images/iamg_seguir_f.png");
+ float: left;
+}
