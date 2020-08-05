@@ -1,0 +1,129 @@
+#actx {
+
+}
+.actx_clear:after{
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+.actx_clear {
+ display: inline-block;
+}
+* html .actx_clear {
+ height: 1%;
+}
+.actx_clear{
+ display: block;
+}
+.actx_obs{
+ z-index: 1000;
+ width: auto;
+ color: #555;
+ margin-left: 20%;
+ position: absolute;
+ padding: 5px 10px 5px 30px;
+ border: 1px solid #C9C9C9;
+ border-top: none;
+ -moz-border-radius: 0px 0px 3px 3px;
+ background: #ffc url("actx_tempo.gif") 5px 2px no-repeat;
+}
+.actx_view{
+ font-size: 9pt;
+ font-family: Arial, Helvetica;
+ margin: 0px;
+ overflow: hidden;
+ position: relative;
+}
+.actx_msg {
+ width: 100%;
+ margin: 0px;
+ padding: 5px;  
+ display: block;
+ max-height: 70px;
+ overflow: hidden;
+ border-color: transparent transparent #e0e0e0 transparent;
+ border-style: none none dashed none;
+ border-width: 1px;
+}
+.upp{
+ background-color: #ffffe1;
+}
+.actx_msg:hover{
+ background-color: #fefde7; 
+}
+.actx_auto {
+ float: left;
+ width: 60px;
+ height: 60px;
+ display: block;
+ overflow: hidden;
+ text-align: left;
+}
+.actx_auto img {
+ background: url("actx_foto.gif");
+ -webkit-box-shadow: 2px 2px 2px #dfdfdf;
+ -moz-box-shadow: 2px 2px 2px #dfdfdf;
+ border: 2px solid transparent;
+ width: 50px;
+ height: 50px;
+}
+.actx_auto img:hover {
+ border: 2px solid #F9A200;
+}
+.actx_main {
+ float: left;
+ width: auto;
+ padding: 0 5px;
+ max-width: 90%;
+ overflow: hidden;
+} 
+.actx_title {
+ font-size: 8pt;
+ color: #a0a0a0;
+}
+.actx_txt{
+ min-height: 40px;
+ display: block;
+}
+.actx_xmsg {
+ position: absolute;
+ z-index: 1000;
+ margin: 0px;
+ color: #555;
+ padding: 0px;
+ height: 40px;
+ width: 40px;
+ display: block;
+ opacity: 0.5;
+ margin-top: -50px;
+ margin-left: 75%;
+ cursor: pointer;
+ background: transparent url("actx_del.gif") no-repeat;
+}
+.actx_msg:hover .actx_xmsg {
+ display: block;  
+}
+.actx_xmsg:hover {
+ opacity: 1;   
+ background-position: 0px -40px;
+}
+.actx_submit{
+  height: 10px;
+  width: 92%;
+  color: #606060;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 10px auto;
+  padding: 4px 10px 8px 10px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  text-shadow: 0 1px 1px #F8F8F8;
+  -moz-border-radius: 3px 3px 3px 3px;
+  background: #fdfdfd url(/css/bg-button.gif) repeat-x bottom;
+}
+.actx_submit:hover{
+ border: 1px solid #B0B0B0;
+}
