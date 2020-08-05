@@ -1,0 +1,5 @@
+User-agent: WebZip
+Disallow: /
+
+User-agent: HTTrack 3.0
+Disallow: /

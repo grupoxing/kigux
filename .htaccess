@@ -1,0 +1,33 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^www.(.*) [NC]
+RewriteRule ^(.*) https://%1/$1 [R=301,L]
+
+RewriteRule ^$                                                               /index.php?id=diversas
+RewriteRule ^buscar.do$                                                      /home.php
+RewriteRule ^view.do$                                                        /home.php
+RewriteRule ^widget.do$                                                      /tool/wdg/widget.php
+RewriteRule ^([a-z,0-9,_-]+)(\.)do$     	                             /$1.php
+RewriteRule ^([a-z,A-Z,0-9,_-]+)\/?$            	      	             /home.php?id=$1
+RewriteRule ^([a-z,A-Z,0-9,_-]+)(\/|:)([0-9]*)$                              /home.php?id=$1&pg=$3
+RewriteRule ^([a-z,A-Z,0-9,_-]+)(\/|:)([a-z]*)$             	             /home.php?id=$1&cmd=$3
+RewriteRule ^([a-z,A-Z,0-9,_-]+)(\/|:)([a-z]*)(\/|:)([0-9]*)$                /home.php?id=$1&cmd=$3&pg=$5
+RewriteRule ^([a-z,A-Z,0-9,_-]+)(\/|:)([a-z]*)(\/|:)([a-z]*)$                /home.php?id=$1&cmd=$3&exe=$5
+RewriteRule ^([a-z,A-Z,0-9,_-]+)(\/|:)([a-z]*)(\/|:)([a-z]*)(\/|:)([0-9]*)$  /home.php?id=$1&cmd=$3&exe=$5&pg=$7
+
+ErrorDocument 400                                                            /page_error.jpg
+ErrorDocument 401                                                            /page_error.jpg
+ErrorDocument 403                                                            /page_error.jpg
+ErrorDocument 404                                                            /page_error.jpg
+
+ErrorDocument 500                                                            /page_error.jpg
+ErrorDocument 501                                                            /page_error.jpg
+ErrorDocument 502                                                            /page_error.jpg
+ErrorDocument 503                                                            /page_error.jpg
+ErrorDocument 504                                                            /page_error.jpg
+ErrorDocument 505                                                            /page_error.jpg
+# Use PHPstable as default
+AddHandler application/x-httpd-php-stable .php
+<IfModule mod_suphp.c>
+    suPHP_ConfigPath /opt/phpstable/lib
+</IfModule>
