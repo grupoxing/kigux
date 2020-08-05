@@ -1,0 +1,236 @@
+* {
+ margin: 0;
+ padding: 0;
+}
+a, a:hover {
+ color: #DD91A6;
+}
+ins, a {
+ text-decoration: none;
+}
+a {
+ color: #0069D6;
+ font-weight: inherit;
+ line-height: inherit;
+ text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, legend, button, table, caption, tbody, tfoot, thead, tr, th, td {
+ border: 0 none;
+ font-family: inherit;
+ font-size: 100%;
+ font-style: normal;
+ font-weight: normal;
+ line-height: 1;
+ margin: 0;
+ padding: 0;
+}
+p {
+ font-size: 13px;
+ font-weight: normal;
+ line-height: 18px;
+ margin-bottom: 9px;
+}
+strong {
+ font-style: inherit;
+ font-weight: bold;
+}
+#map_canvas {
+ display: block;
+ width: 100%;
+}
+.clearfix:after {
+ clear: both;
+ content: ".";
+ display: block;
+ height: 0;
+ visibility: hidden;
+}
+.map_popup {
+ background-color: #000000;
+ border-radius: 5px; 
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px;
+ display: block;
+ left: 370px;
+ opacity: 0.9;
+ position: absolute;
+ top: 20px;
+ width: 275px;
+ z-index: 100;
+}
+.map_popup .map_close {
+ background: url("gmaps_close.png") no-repeat scroll 0 0 transparent;
+ color: #000000;
+ display: block;
+ font-size: 20px;
+ font-weight: bold;
+ height: 42px;
+ line-height: 13.5px;
+ overflow: hidden;
+ position: absolute;
+ right: -18px;
+ text-indent: -9999px;
+ text-shadow: 0 1px 0 #FFFFFF;
+ top: -18px;
+ width: 42px;
+}
+.map_popup .map_home {
+ padding: 10px;
+}
+.map_popup .map_home .map_header .map_photo img {
+ border: 1px solid #FFFFFF;
+ float: left;
+ height: 42px;
+ width: 41px;
+ border-radius: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px; 
+}
+.map_popup .map_home .map_header .map_info {
+ float: left;
+ min-height: 50px;
+ margin-left: 8px;
+ width: 204px;
+ text-transform: capitalize;
+}
+.map_popup .map_home .map_header .map_info strong {
+ display: block;
+ color: #FFFFFF;
+ font: 14px arial;
+}
+.map_popup .map_home .map_header .map_info span {
+ display: block;
+ color: #C3C2C3;
+ font: 12px arial;
+}
+.map_popup .map_home .map_main {
+ background: none repeat scroll 0 0 #FFFFFF;
+ border-radius: 5px;
+ -moz-border-radius: 5px;
+ -webkit-border-radius: 5px; 
+ height: 100%;
+ margin: 0;
+ overflow: hidden;
+ padding: 10px 5px 5px 10px;
+ position: relative;
+ width: 240px;
+ font: 13px arial;
+}
+.map_popup .map_home .map_main .map_title {
+ color: #000;
+ display: block;
+ margin-bottom: 5px;
+ overflow: hidden;
+}
+.map_popup .map_home .map_main .map_texto {
+ color: #000;
+ line-height: normal;
+ overflow: hidden;
+ margin-bottom: 15px;
+}
+.map_popup .map_home .map_main .map_smore {
+ bottom: 0;
+ padding: 3px 5px;
+ position: absolute;
+ right: 0;
+}
+.map_popup .map_seta {
+ -moz-border-bottom-colors: none;
+ -moz-border-image: none;
+ -moz-border-left-colors: none;
+ -moz-border-right-colors: none;
+ -moz-border-top-colors: none;
+ border-color: transparent #000000 transparent transparent;
+ border-style: solid;
+ border-width: 18px;
+ height: 1px;
+ position: absolute;
+ left: -37px;
+ top: 37px;
+ width: 1px;
+}
+#googleMap {
+ background: none repeat scroll 0 0 transparent;
+ border: 0 none;
+ height: 100%;
+ margin: 0;
+ overflow: hidden;
+ position: relative;
+ width: 100%;
+}
+.cluster {
+ background: none repeat scroll 0 0 #FFFFFF;
+ color: #000000;
+ cursor: pointer;
+ font-family: Verdana;
+ font-size: 12px;
+ font-weight: bold;
+ height: 50px;
+ line-height: 50px;
+ opacity: 0.8;
+ text-align: center;
+ width: 50px;
+}
+.cluster-1 {
+ background: url("images/m1.png") no-repeat scroll 0 0 transparent;
+ height: 56px;
+ line-height: 56px;
+ width: 56px;
+}
+.cluster-2 {
+ background: url("images/m2.png") no-repeat scroll 0 0 transparent;
+ height: 56px;
+ line-height: 56px;
+ width: 56px;
+}
+.cluster-3 {
+ background: url("images/m3.png") no-repeat scroll 0 0 transparent;
+ height: 66px;
+ line-height: 66px;
+ width: 66px;
+}
+.infobulle {
+ background-color: #393939;
+ border: 1px solid #2C2C2C;
+ border-radius: 4px 4px; 
+ -moz-border-radius: 4px 4px;
+ -webkit-border-radius: 4px 4px;
+ box-shadow: 0 0 5px #000000;
+ clear: both;
+ cursor: default;
+ height: 32px;
+ overflow: hidden;
+ padding: 0;
+ position: relative;
+}
+.infobulle .bg {
+ background-color: #5E5E5E;
+ border: 0 none;
+ font-size: 1px;
+ height: 16px;
+ margin: 0;
+ padding: 0;
+ width: 100%;
+}
+.infobulle .text {
+ color: #FFFFFF;
+ font-family: Verdana;
+ font-size: 11px;
+ font-weight: bold;
+ line-height: 25px;
+ margin-top: -17px;
+ padding: 5px;
+ text-shadow: 0 -1px 0 #000000;
+ text-transform: capitalize;
+ white-space: nowrap;
+}
+.arrow {
+ border-color: #2C2C2C transparent transparent;
+ border-style: solid;
+ border-width: 10px 10px 0 0;
+ height: 0;
+ left: 20px;
+ margin-left: 0;
+ position: absolute;
+ width: 0;
+}
